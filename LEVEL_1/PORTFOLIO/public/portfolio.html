@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background-color: #f7f7f7;
         }
 
         header {
@@ -24,6 +25,7 @@
 
         section {
             padding: 4em;
+            padding-bottom: 10px;
         }
 
         img {
@@ -65,7 +67,7 @@
             width: 160px;
             height: 160px;
             border-radius: 5px;
-            box-shadow: 1px 2px 2px #333;
+            box-shadow: 2px 4px 9px #333;
         }
 
         .aboutdiv {
@@ -74,6 +76,28 @@
             justify-content: space-between;
             padding-left: 10px;
             padding-right: 100px;
+        }
+        .button1{
+            border: solid 2px #000000;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: black;
+            background-color: rgb(249, 242, 242);
+        }
+        .resumebutton{
+            padding-left: 110px;
+    
+        }
+        .contact{
+            margin-top:0px;
+            padding-left: 110px;
+            padding-bottom: 50px;
+        }
+        .footer1{
+            text-decoration: none;
+            color: white;
+            
         }
     </style>
 </head>
@@ -89,7 +113,12 @@
         <div class="aboutdiv">
             <div style="justify-content:left; padding:100px; padding-top:0px; ">
                 <h2>ABOUT ME ~</h2>
-                <img class="pic" src="/LEVEL_1/PORTFOLIO/img/pic.jpg" alt="Roni bhakta">
+                <div> 
+                    <img class="pic" src="/LEVEL_1/PORTFOLIO/img/pic.jpg" alt="Roni bhakta">
+                    <div>
+                        <h3>Profile Pic</h3>
+                    </div>
+                </div>
                 <p>
                 <h3>🧑🏻‍🦱 Passionate B.Tech Computer Science Student | Full-Stack Web Developer</h3>
                 <P>Hello there! 👋 I'm Roni Bhakta, a dynamic and enthusiastic B.Tech Computer Science student with a
@@ -173,18 +202,22 @@
     </section>
 
     <section id="resume">
-        <h2>Resume</h2>
-        <p><a href="your-resume.pdf" target="_blank">Download Resume (PDF)</a></p>
-    </section>
+        <div class="resumebutton" > <h2>Resume</h2>
+            <p><a class="button1" href="./documents/RoniBhaktaResume.pdf" target="_blank">Download Resume (PDF)</a></p>
+       </div>
+        </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your@email.com</p>
-        <p>Phone: (123) 456-7890</p>
+        <div class="contact">
+            <h2>Contact</h2>
+            <p>Email: Ronibhakta1@gmail.com</p>
+            <p>Phone: +91 9579840190</p>
+        </div>
+        
     </section>
 
     <div class="footer">
-        <p>&copy; 2024 Your Name | <a href="#">Privacy Policy</a></p>
+        <p>&copy; 2024 Roni Bhakta | <a class="footer1" href="./portfolio.html">HOME</a></p>
     </div>
 
 </body>
