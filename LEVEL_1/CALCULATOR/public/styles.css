@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+    background-image: url(/LEVEL_1/CALCULATOR/images/back1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.back {
+
+    padding: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 950px;
+    border-radius: 10px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.display {
+    border-radius: 8px;
+    grid-column: span 4;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    text-align: right;
+    font-size: 1.5em;
+}
+
+.pic {
+    width: 35px;
+    height: 30px;
+}
+
+.btn {
+    /* background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); */
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.btn1 {
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding-bottom: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.2);
+    
+}
+
+.btn2 {
+    grid-column: span 2;
+    border-radius: 8px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: x-large;
+    text-align: center;
+}
+
+.btn,
+.btn2,
+.btn1:hover {
+    background-color: #ddd;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.295);
+    
+}
+h3{
+    font-size: 5rem;
+    /* display: flex; */
+    /* justify-content: right; */
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
