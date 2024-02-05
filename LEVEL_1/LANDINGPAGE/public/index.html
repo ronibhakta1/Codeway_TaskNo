@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Landing page</title>
+
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-repeat: no-repeat;
+            background-color: #000000;
+            background-image: url(/LEVEL_1/LANDINGPAGE/images/Mars\ Landscape\ 1608.jpg);
+        }
+
+        header {
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 300;
+            padding-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 5px;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a,
+        h1,
+        p,
+        h2 {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        section {
+            padding: 3rem;
+        }
+
+
+        #gallery {
+            background-color: #111;
+            color: #fff;
+        }
+
+
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            margin-top: 20px;
+        }
+
+        form label {
+            margin-bottom: 5px;
+        }
+
+        form input,
+        form button {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            padding: 10rem;
+            text-align: center;
+        }
+
+        .mars {
+            display: flex;
+            justify-content: center;
+            font-size: 250px;
+            font-weight: 900;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .login {
+            cursor: pointer;
+            background-color: #212020;
+            border: 1px solid #797777;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .login:hover{
+            background-color: #4743436e;
+            
+        }
+
+        .head1 {
+            cursor: pointer;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .head2 {
+            cursor: pointer;
+            margin-left: -150px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-weight: 600;
+        }
+
+        .logo {
+            margin-top: -25px;
+            margin-bottom: -25px;
+            width: 100px;
+            height: 80px;
+
+        }
+    </style>
+
+    <header>
+        <div>
+            <img class="logo" src="/LEVEL_1/LANDINGPAGE/images/RemoveBG logo.png" alt="ISRO">
+        </div>
+        <div class="head2">
+            <a href="#home">SPACE ALPHA</a>
+        </div>
+        <div class="head1">
+            <a href="#mission">Mission</a>
+        </div>
+        <div class="head1">
+            <a href="#gallery">Gallery</a>
+        </div>
+        <div class="head1">
+            <a href="#join">Join Us</a>
+        </div>
+        <div class="login">
+            <a href="#login">Login</a>
+        </div>
+    </header>
+    <section>
+        <p class="mars">MARS</p>
+    </section>
+
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>Embark on a journey to explore the mysteries of the universe. Join us in the pursuit of knowledge and
+            discovery.</p>
+        <a href="#join" class="cta-button">Join the Mission</a>
+    </section>
+
+    <!-- <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="space-image">
+            <img src="nebula.jpg" alt="Nebula">
+        </div>
+        <div class="space-image">
+            <img src="rocket_launch.jpg" alt="Rocket Launch">
+        </div>
+    </section> -->
+
+    <section id="join">
+        <h2>Join Us in Exploring the Stars</h2>
+        <p>Subscribe to stay updated on our latest missions and discoveries. Be part of the space exploration community.
+        </p>
+        <form action="#" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit" class="cta-button">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Space Exploration. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
