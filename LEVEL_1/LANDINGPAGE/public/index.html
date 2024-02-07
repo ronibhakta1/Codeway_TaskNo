@@ -11,19 +11,24 @@
 <body>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            border: 0.1px solid #373636;
+            border-radius: 30px;
+            font-family: 'Courier New', Courier, monospace;
             margin: 0;
             padding: 0;
+            margin: 1%;
             background-size: cover;
             box-sizing: border-box;
             background-repeat: no-repeat;
+            background-size: 1650px;
             background-color: #000000;
-            background-image: url(/LEVEL_1/LANDINGPAGE/images/Space.jpg);
+            background-image: url(/LEVEL_1/LANDINGPAGE/images/Space\ planet\ science\ night.jpg);
+            scroll-behavior:unset;
         }
 
         header {
             font-size: 18px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: 'Courier New', Courier, monospace;
             font-weight: 300;
             padding-top: 50px;
             display: flex;
@@ -46,7 +51,11 @@
         a,
         h1,
         p,
-        h2 {
+        h2,
+        h5,
+        h3,
+        h4,
+        h6 {
             text-decoration: none;
             color: #ffffff;
         }
@@ -61,9 +70,6 @@
             background-color: #111;
             color: #fff;
         }
-
-
-
 
         form {
             display: flex;
@@ -91,26 +97,31 @@
             display: flex;
             justify-content: center;
             margin-bottom: -50px;
+            margin-top: 210px;
             font-size: 250px;
             font-weight: 900;
+            padding-bottom: 50px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
         }
 
         .login {
             cursor: pointer;
-            background-color: #212020;
             border: 1px solid #797777;
             padding-top: 5px;
             padding-bottom: 5px;
             border-radius: 5px;
             padding-left: 15px;
             padding-right: 15px;
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(0.1px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+
         }
 
         .login:hover {
             background-color: #4743436e;
-
         }
 
         .head1 {
@@ -138,28 +149,319 @@
             margin-bottom: -25px;
             width: 100px;
             height: 80px;
-
         }
 
         #mission {
             font-size: 20px;
             font-style: oblique;
+            margin-right: -40px;
+
         }
 
+        .misss {
+            display: flex;
+            justify-content: left;
+        }
+
+        #img12 {
+            width: 300px;
+            height: 400px;
+            margin-top: 60px;
+            margin-left: 40px;
+        }
+
+        .imfof {
+            margin-top: 100px;
+            padding-top: 40px;
+            padding-right: 60px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 40px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+
+        }
+
+        .stats1 {
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+        }
+
+        .stats {
+            border: 0.01em solid #888383;
+            padding: 1%;
+            padding-top: 10px;
+            padding-bottom: 0px;
+            padding-right: 140px;
+            padding-left: 100px;
+            border-radius: 1px;
+
+        }
+
+        .stats2 {
+            text-align: left;
+            margin-left: -90px;
+            margin-bottom: -30px;
+            font-size: 25px;
+            margin-top: -30px;
+            margin-right: -130px;
+        }
+
+        .topstat {
+            margin-left: -90px;
+            font-size: 15px;
+        }
+
+        .giff {
+            padding-left: 70px;
+            margin: -0px;
+            margin-right: 0px;
+            display: inline-flex;
+            justify-content: center;
+        }
     </style>
 
+    <script>
+        // JavaScript function to generate a random message
+        function getRandomMessage() {
+            var messages = [
+                {
+                    year: 2050,
+                    event: "Earth's Last Hope.",
+                    discovery: "New Energy Source",
+                    protagonist: "Brave Scientist"
+                },
+                {
+                    year: 2102,
+                    event: "Global AI Network Activation.",
+                    impact: "Worldwide Connectivity",
+                    challenges: "Ethical Dilemmas"
+                },
+                {
+                    year: 2077,
+                    event: "Solar Flare Impact.",
+                    consequences: "Technological Collapse",
+                    survivors: "Underground Communities"
+                },
+                {
+                    year: 2155,
+                    event: "Ancient Ruins Resurface.",
+                    origin: "Extraterrestrial Civilization",
+                    mysteries: "Language Deciphering"
+                },
+                {
+                    year: 2223,
+                    event: "Time Dilation Experiment.",
+                    experimenters: "Quantum Physicists",
+                    anomalies: "Temporal Distortions"
+                },
+                {
+                    year: 2150,
+                    event: "First Mars Colony Established.",
+                    challenges: "Life Sustainability",
+                    breakthroughs: "Advanced Terraforming"
+                },
+                {
+                    year: 2222,
+                    event: "Exploring Black Holes.",
+                    revelations: "Existence of Parallel Realities",
+                    risks: "Space-Time Distortion"
+                },
+                {
+                    year: 2105,
+                    event: "Neural Network Dreams.",
+                    experiences: "Collective Consciousness",
+                    consequences: "Blurred Identities"
+                },
+                {
+                    year: 2345,
+                    event: "Extraterrestrial Artifact Found.",
+                    artifact: "Key to Advanced Technology",
+                    consequences: "Global Transformation"
+                },
+                {
+                    year: 2077,
+                    event: "Mysterious Blackout: Worldwide Chaos.",
+                    cause: "AI Malfunction",
+                    aftermath: "Rebuilding Civilization"
+                },
+                {
+                    year: 2678,
+                    event: "Lost in Time: Enigma.",
+                    time_traveler: "Adventurous Explorer",
+                    paradox: "Unraveling Future"
+                },
+                {
+                    year: 2150,
+                    event: "Digital Consciousness Era Begins.",
+                    transformation: "Upload of Human Minds",
+                    challenges: "Ethical Debates"
+                },
+                {
+                    year: 2450,
+                    event: "The 7th Dimension Revealed.",
+                    dimension: "Beyond Space-Time",
+                    beings: "Interdimensional Travelers"
+                },
+                {
+                    year: 2102,
+                    event: "AI Guardians: Earth's Protectors.",
+                    AI_guardians: "Sentient Protectors",
+                    mission: "Preserving Humanity"
+                },
+                {
+                    year: 2223,
+                    event: "City of Tomorrow: Skyward Ascent.",
+                    city_design: "Floating Megastructures",
+                    society: "Vertical Urban Living"
+                }
+            ];
+
+            var randomIndex = Math.floor(Math.random() * messages.length);
+            return messages[randomIndex];
+        }
+
+        // Function to set a random message in the h5 element
+        function setRandomMessage() {
+            var h5Element = document.getElementById("randomMessage");
+            if (h5Element) {
+                var randomMessage = getRandomMessage();
+                var formattedMessage = `${randomMessage.year}: ${randomMessage.event} `;
+                h5Element.textContent = formattedMessage;
+            }
+        }
+
+        // Call the function when the page loads
+        setInterval(setRandomMessage, 900);
+
+        function getRandomMessage1() {
+            var messages1 = [
+                {
+                    year: 2050,
+                    event: "Earth's Last Hope.",
+                    discovery: "New Energy Source",
+                    protagonist: "Brave Scientist"
+                },
+                {
+                    year: 2102,
+                    event: "Global AI Network Activation.",
+                    impact: "Worldwide Connectivity",
+                    challenges: "Ethical Dilemmas"
+                },
+                {
+                    year: 2077,
+                    event: "Solar Flare Impact.",
+                    consequences: "Technological Collapse",
+                    survivors: "Underground Communities"
+                },
+                {
+                    year: 2155,
+                    event: "Ancient Ruins Resurface.",
+                    origin: "Extraterrestrial Civilization",
+                    mysteries: "Language Deciphering"
+                },
+                {
+                    year: 2223,
+                    event: "Time Dilation Experiment.",
+                    experimenters: "Quantum Physicists",
+                    anomalies: "Temporal Distortions"
+                },
+                {
+                    year: 2150,
+                    event: "First Mars Colony Established.",
+                    challenges: "Life Sustainability",
+                    breakthroughs: "Advanced Terraforming"
+                },
+                {
+                    year: 2222,
+                    event: "Exploring Black Holes.",
+                    revelations: "Existence of Parallel Realities",
+                    risks: "Space-Time Distortion"
+                },
+                {
+                    year: 2105,
+                    event: "Neural Network Dreams.",
+                    experiences: "Collective Consciousness",
+                    consequences: "Blurred Identities"
+                },
+                {
+                    year: 2345,
+                    event: "Extraterrestrial Artifact Found.",
+                    artifact: "Key to Advanced Technology",
+                    consequences: "Global Transformation"
+                },
+                {
+                    year: 2077,
+                    event: "Mysterious Blackout: Worldwide Chaos.",
+                    cause: "AI Malfunction",
+                    aftermath: "Rebuilding Civilization"
+                },
+                {
+                    year: 2678,
+                    event: "Lost in Time: Enigma.",
+                    time_traveler: "Adventurous Explorer",
+                    paradox: "Unraveling Future"
+                },
+                {
+                    year: 2150,
+                    event: "Digital Consciousness Era Begins.",
+                    transformation: "Upload of Human Minds",
+                    challenges: "Ethical Debates"
+                },
+                {
+                    year: 2450,
+                    event: "The 7th Dimension Revealed.",
+                    dimension: "Beyond Space-Time",
+                    beings: "Interdimensional Travelers"
+                },
+                {
+                    year: 2102,
+                    event: "AI Guardians: Earth's Protectors.",
+                    AI_guardians: "Sentient Protectors",
+                    mission: "Preserving Humanity"
+                },
+                {
+                    year: 2223,
+                    event: "City of Tomorrow: Skyward Ascent.",
+                    city_design: "Floating Megastructures",
+                    society: "Vertical Urban Living"
+                }
+            ];
+
+            var randomIndex1 = Math.floor(Math.random() * messages1.length);
+            return messages1[randomIndex1];
+        }
+
+        // Function to set a random message in the h5 element
+        function setRandomMessage1() {
+            var h5Element = document.getElementById("randomMessage1");
+            if (h5Element) {
+                var randomMessage1 = getRandomMessage();
+                var formattedMessage1 = `${randomMessage1.year}: ${randomMessage1.event} `;
+                h5Element.textContent = formattedMessage1;
+            }
+        }
+
+        // Call the function when the page loads
+        setInterval(setRandomMessage1, 900);
+    </script>
     <header>
-        <div>
-            <img class="logo" src="/LEVEL_1/LANDINGPAGE/images/RemoveBG logo.png" alt="ISRO">
-        </div>
-        <div class="head2">
-            <a href="#home">SPACE ALPHA</a>
-        </div>
         <div class="head1">
             <a href="#mission">Mission</a>
         </div>
         <div class="head1">
             <a href="#gallery">Gallery</a>
+        </div>
+        <div>
+            <img class="logo" src="/LEVEL_1/LANDINGPAGE/images/RemoveBG logo.png" alt="ISRO">
+        </div>
+        <div class="head2">
+            <a href="#home">SPACE ALPHA</a>
         </div>
         <div class="head1">
             <a href="#join">Join Us</a>
@@ -171,17 +473,76 @@
     <section>
         <p class="mars">EARTH</p>
     </section>
-
-    <section id="mission">
-        <div>
-            <h2>Our Mission</h2>
-            <p>Embark on a journey to explore the mysteries of the universe. Join us in the pursuit of knowledge and
-                discovery.</p>
-            <a href="#join" class="cta-button">Join the Mission</a>
+    <section>
+        <div class="stats1">
+            <div class="stats">
+                <a class="topstat" href="">Circumference
+                </a>
+                <div class="stats2">
+                    <h6>40,075 km</h6>
+                </div>
+            </div>
+            <div class="stats">
+                <a class="topstat" href="">Escape Velocity</a>
+                <div class="stats2">
+                    <h6>11.2 km/sec</h6>
+                </div>
+            </div>
+            <div class="stats">
+                <a class="topstat" href="">Rotation period</a>
+                <div class="stats2">
+                    <h6>23.9345 hr (23 hr 56 min 4 sec) of mean solar time</h6>
+                </div>
+            </div>
+            <div class="stats">
+                <a class="topstat" href="">Age</a>
+                <div class="stats2">
+                    <h6>4.54 billion years</h6>
+                </div>
+            </div>
+            <div class="stats">
+                <a class="topstat" href="">Oxygen</a>
+                <div class="stats2">
+                    <h6>21%</h6>
+                </div>
+            </div>
         </div>
     </section>
+    <section>
+        <div class="giff">
+            <div><iframe src="https://gifer.com/embed/YYqc" width=480 height=480.000 frameBorder="0"
+                    allowFullScreen></iframe>
+                <p><a href="https://gifer.com"></a></p>
+            </div>
+            <div>
+                <h5 id="randomMessage"></h5>
+                <h5 id="randomMessage1"></h5>
+            </div>
 
-    <!-- <section id="gallery">
+        </div>
+
+    </section>
+
+    <section id="mission">
+        <div class="misss">
+            <div class="imfof">
+                <h2>Our Mission: Exploring the Cosmos, Advancing Humanity</h2>
+                <p>At Space Alpha, our mission is to explore the cosmos, one discovery at a time, and to leverage
+                    our findings for the betterment of humanity. From probing distant galaxies to understanding the
+                    intricacies of our own solar system, our team of visionary scientists, engineers, and space
+                    enthusiasts
+                    collaborates to unlock the secrets of the universe and pave the way for the next era of space
+                    exploration.</p>
+                <a href="#join" class="cta-button">Join the Mission</a>
+            </div>
+            <div>
+                <img id="img12" src="/LEVEL_1/LANDINGPAGE/images/download.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="gallery">
         <h2>Gallery</h2>
         <div class="space-image">
             <img src="nebula.jpg" alt="Nebula">
@@ -189,7 +550,7 @@
         <div class="space-image">
             <img src="rocket_launch.jpg" alt="Rocket Launch">
         </div>
-    </section> -->
+    </section>
 
     <section id="join">
         <h2>Join Us in Exploring the Stars</h2>
