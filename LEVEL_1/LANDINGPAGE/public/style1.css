@@ -1,0 +1,238 @@
+body {
+    border: 0.1px solid #373636;
+    border-radius: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    margin: 1%;
+    background-size: cover;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: 1650px;
+    background-color: #000000;
+    background-image: url(/LEVEL_1/LANDINGPAGE/images/Space\ planet\ science\ night.jpg);
+    scroll-behavior: unset;
+}
+
+header {
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a,
+h1,
+p,
+h2,
+h5,
+h3,
+h4,
+h6 {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+section {
+    padding: 7rem;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input,
+form button {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 10rem;
+    text-align: center;
+}
+
+.mars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -50px;
+    margin-top: -160px;
+    font-size: 250px;
+    font-weight: 900;
+    padding-bottom: 50px;
+    text-shadow: 5px 5px 15px #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.login {
+    cursor: pointer;
+    border: 1px solid #797777;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.1px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.login:hover {
+    background-color: #4743436e;
+}
+
+.head1 {
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.head2 {
+    cursor: pointer;
+    margin-left: -150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 600;
+}
+
+.logo {
+    margin-top: -25px;
+    margin-bottom: -25px;
+    width: 100px;
+    height: 80px;
+}
+
+#mission {
+    font-size: 20px;
+    font-style: oblique;
+    margin-right: -40px;
+
+}
+
+.misss {
+    display: flex;
+    justify-content: left;
+}
+
+#img12 {
+    margin-top: -190px;
+    width: 280px;
+    height: 400px;
+    margin-left: 10px;
+    margin-right: 30px;
+    padding-right: 30px;
+
+}
+
+.imfof {
+    border: #797777 1px solid;
+    margin-top: -160px;
+    margin-bottom: 70px;
+    margin-right: 20px;
+    padding-top: 40px;
+    padding-right: 60px;
+    padding-left: 90px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+
+.stats1 {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+}
+
+.stats {
+    border: 0.01em solid #888383;
+    padding: 1%;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-right: 140px;
+    padding-left: 100px;
+    border-radius: 1px;
+
+}
+
+.stats2 {
+    text-align: left;
+    margin-left: -90px;
+    margin-bottom: -30px;
+    font-size: 25px;
+    margin-top: -30px;
+    margin-right: -130px;
+}
+
+.topstat {
+    margin-left: -90px;
+    font-size: 15px;
+}
+
+.giff {
+    padding-left: 70px;
+    margin: -0px;
+    margin-right: 0px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.back1 {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    margin-bottom: -900px;
+
+}
+
+.back2 {
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 5px 5px 15px #000000;
+}
+.space1{
+    display:flex;
+    
+}
+.space-image{
+padding: 5px;
+
+}
+.space-image img {
+    overflow-x: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
